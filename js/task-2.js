@@ -1,5 +1,9 @@
 function formatMessage(message, maxLength) {
-return message.Length <= maxLength ? message : `${message.slice(0, maxLength)}...`;
+  if (message.Length <= maxLength ){
+    return message;
+} else {
+    return message.slice(0, maxLength) + "...";
+}
 }
 
  
